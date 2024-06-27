@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="logica.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navegation">
+        <div class="btn-menu"><img src="Imgs/align-justify.svg" alt="Menu Botton" class="btnmenu"></img>
+            <div class="navlist">
+            <a href="#Section1" class="list-item">Playing with wrods</a>
+            <a href="#Section2" class="list-item">Time and Sound</a>
+            <a href="#Section3" class="list-item">Crazy Ball</a>
+            <a href="#Section4" class="list-item">The Final Countdown</a>
+            <a href="#Section5" class="list-item">Responsive Tester</a>
+            <a href="#Section6" class="list-item">Additional Info</a>
+            <a href="#Section7" class="list-item">Random Cinema</a>
+            </div>
+        </div>
+        <div class="scrolbtn">
+            <a href="#Section1" class="arrow-up"><img src="Imgs/arrow-up.svg" alt="ToTop" class="ToTop"></a>
+        </div>
+        <div class="formbtn">
+            <img src="Imgs/message.svg" alt="Contact" class="formbtnimg">
+        </div>
+        <div class="formmodel">
+            <form action="">
+                <input type="text" name="Introduzca el nombre" placeholder="Introduzca el nombre" id="fomrname">
+                <input type="email" name="Introduzca su email" placeholder="Introduzca su email" id="formmail">
+                <input type="text" name="Introduzca el asunto" placeholder="Introduzca el asunto" id="fomrsubject">
+                <textarea name="Mensaje" id="formmsg" cols="60" rows="10">Comentenos al respecto</textarea>
+                <input type="submit" value="Enviar" id="formsubmit">
+            </form>
+        </div>
+    </nav>
+
+    <section class="slider-container">
+        <div class="slider-sliders">
+            <div class="sliders">
+                <div class="slider active">
+                    <img class="slider-img" src="Imgs/Slider/01.jpg" alt="Slider Image">
+                </div>
+                <div class="slider">
+                    <img class="slider-img" src="Imgs/Slider/02.jpg" alt="Slider Image">
+                </div>
+                <div class="slider">
+                    <img class="slider-img" src="Imgs/Slider/03.jpg" alt="Slider Image">
+                </div>
+            </div>
+            <div class="slider-btns">
+                <input class="slidemarker active" type="radio" name="slidemarker" id="slidemarker">
+                <input class="slidemarker" type="radio" name="slidemarker" id="slidemarker">
+                <input class="slidemarker" type="radio" name="slidemarker" id="slidemarker">
+            </div>
+        </div>
+    </section>
+
+    <section class="Section1" id="Section1">
+        <div class="Text">
+        <h1 class="Section-Letter">Section Number One</h1>
+        <h2 class="Section-Subjec">Play with the 3 exercises below</h2>
+        </div>
+        <div class="Exercises">
+        <div class="container">
+        <p>Introduce un valor y te dire cuantos caracteres tiene</p>
+        <input type="button" value="Introducir dato" class="button">
+        <input type="text" name="value" id="value" class="value" value="-">
+        </div>
+
+        <div class="caldate">
+        <p>Elije las fechas</p>
+        <input type="date" name="" id="" class="date1">
+        <input type="date" name="" id="" class="date2">
+        <input type="button" value="Calcular" class="button" id="calculator">
+        </div>
+
+        <div class="calletra">
+        <h1>Contador de vocales y consonantes</h1>
+        <p>Introduce una cadena de texto y te diré cuantas vocales y consonantes posee</p>
+        <div class="h">
+            <input type="text" name="cadena" id="cadena" class="cadena" placeholder="Introduce una cadena de texto">
+            <input type="button" value="Medir" class="button" id="medir">
+            <p>Vocales</p>
+            <input type="text" name="Vocales" id="Vocales" class="Vocales">
+            <p>Consonantes</p>
+            <input type="text" name="Consonantes" id="Consonantes" class="Consonantes">
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="Section2" id="Section2">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Two</h1>
+            <h2 class="Section-Subjec">Play with time</h2>
+        </div>
+        <div class="timebox">
+            <div class="alarm">
+                <div class="snozer">
+                    <img src="Imgs/bullhorn.svg" alt="Bullhorn" class="Bullhorn">
+                    <div>
+                        <audio><source type="audio/mp3" src="Imgs/AlarmSound.mp3"></audio>
+                    </div>
+                </div>
+                <div class="alarm-buttoms">
+                    <div class="turn-on">
+                        <img src="Imgs/volume-high.svg" alt="Turnon" class="Turnon">
+                    </div>
+                    <div class="turn-off">
+                        <img src="Imgs/volume-xmark.svg" alt="Turnoff" class="Turnoff">
+                    </div>
+                </div>
+            </div>
+            <div class="clock">
+                <div class="clock_numbers">
+                    <div class="localtime">00-00-00</div>
+                </div>
+                <div class="clock_controls">
+                    <div class="control_on">
+                        <img src="Imgs/play.svg" alt="Turnon" class="Turnon">
+                    </div>
+                    <div class="control_off">
+                        <img src="Imgs/stop.svg" alt="Turnoff" class="Turnoff">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Section3" id="Section3">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Thre</h1>
+            <h2 class="Section-Subjec">Try to move the ball using the arrows in your keyboard</h2>
+        </div>
+        <div class="stage">
+            <div class="crazyball"></div>
+        </div>
+    </section>
+
+    <section class="Section4" id="Section4">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Four</h1>
+            <h2 class="Section-Subjec">The Final Countdown</h2>
+        </div>
+        <div class="s4container">
+            <div class="imagine"><p>Imagine your are the AI looking for Sarah Connor, then pick a day on the futere so you can know the remaining time for your victory or defeat. Remember, It's kill or be killed</p>
+            </div>
+            <div class="calendarcon">
+                <input type="date" name="calendar" id="calendar" class="finaldate">
+                <div class="Reset">Reset</div>
+            </div>
+            <div class="remain">
+                <div class="rdays"><h3>Days</h3></div>
+                <div class="rhours"><h3>Hours</h3></div>
+                <div class="rminutes"><h3>Minutes</h3></div>
+                <div class="rseconds"><h3>Seconds</h3></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="Section5" id="Section5">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Five</h1>
+            <h2 class="Section-Subjec">Responsive Tester: Take a look to another space</h2>
+        </div>
+        <div class="sidescontainer">
+            <div class="brands">
+                <div class="bcircle"><img src="Imgs/Brands/amazon.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/apple.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/discord.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/facebook-f.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/github.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/google-play.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/linkedin.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/pinterest-p.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/tiktok.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/twitter.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/whatsapp.svg" class="brand"></img></div>
+                <div class="bcircle"><img src="Imgs/Brands/youtube.svg" class="brand"></img></div>
+            </div>
+            <div class="formside">
+            <form id="formtester" method="get">
+                <input type="text" name="WebTester" id="link" placeholder="Write a link" required>
+                <input type="text" name="Wheight" id="Wheigth" placeholder="Set the height" required>
+                <input type="text" name="Wwidth" id="Wwidth" placeholder="Set the width" required>
+                <input type="submit" value="Try" id="Wopen">
+                <input type="submit" value="Finish" id="Wclose">
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="Section6" id="Section6">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Six</h1>
+            <h2 class="Section-Subjec">Additional Info</h2>
+        </div>
+        <div class="Info-container">
+            <div class="pieceofinfo">
+                <p>Using the object Navigator, I can tell you are currently employing</p>
+                <div class="pieces">
+                </div>
+            </div>
+            <div id="NW" class="pieceofinfo">                
+            </div>
+            <div class="pieceofinfo">
+                <p>Geolocalization</p>
+                <div class="geoinfo">
+                </div>
+            </div>
+        </div>
+                
+    </section>
+
+    <section class="Section7" id="Section7">
+        <div class="Text">
+            <h1 class="Section-Letter">Section Number Seven</h1>
+            <h2 class="Section-Subjec">A movie to chose</h2>
+        </div>
+        <div class="moviescontainer">
+            <div class="Poster">
+                <div class="SugesstionContainer">
+                    <h1 class="closeposter">X</h1>
+                    <h3>My sugesstion</h3>
+                    <div class="divimg">
+                    </div>
+                    <H3 class="moviename"></H3>
+                </div>
+               </div>
+            <input type="button" value="Sugesstion" id="Sugesstion" class="Sugesstion">
+        </div>
+                
+    </section>
+
+    <script src="logica.js"></script>    
+</body>
+</html>
