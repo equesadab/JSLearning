@@ -119,6 +119,11 @@ body{
    left: 25px;
    background-color: yellow;
    border-radius: 10px;
+   transition: 0.3s;
+}
+
+.formbtn:hover{
+    background-color: whitesmoke;
 }
 
 .formbtnimg{
@@ -131,11 +136,11 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     text-align: center;
     justify-content: space-between;
-    top: 100px;
-    left: 25px;
+    top: 150px;
+    left: -320px;
     height: 430px;
     width: 250px;
     background-color: transparent; 
@@ -143,6 +148,11 @@ body{
     border: 1px solid white;
     border-radius: 10px;
     z-index: 999;
+    transition: 0.4s linear;
+}
+
+.formmodel.hide{
+    left: 25px;
 }
 
 form input, form textarea{

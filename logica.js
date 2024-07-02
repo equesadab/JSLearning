@@ -32,15 +32,18 @@ buttom.addEventListener("click", () => {
     value.value = data.length;
 } )
 
+let form = document.querySelector(".formbtn");
+form.addEventListener("click", () => {
+    let $formmodel = document.querySelector(".formmodel");
+    $formmodel.classList.toggle("hide");
+});
+
 /* -----------------------   Section #0 ( Automatic Slider )   ------------------------------------------------- */
 
 function AutoSlide () {
     let $SlideImg = document.querySelectorAll(".slider");
     let $SlideBtn = document.querySelectorAll(".slidemarker");
     let i = 0;
-
-    console.log($SlideImg);
-    console.log($SlideBtn);
 
     setInterval(()=>{
         $SlideImg[i].classList.remove("active");
