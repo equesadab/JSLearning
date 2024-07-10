@@ -900,3 +900,63 @@ input{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
+
+/*---------------------------------------- Section 8 Start ------------------------------------------------------*/
+
+.Section8{
+    height: 100vh;
+}
+
+.httpcont{
+    display: grid;
+    height: 90%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideleft{
+    background-color: #0009; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.orientation{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 30px;
+    margin: 25px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.orientation:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 40px;
+}
+
+.request{
+    font-size: 50px;
+    border: 2px solid gray;
+    padding: 10px 25px;
+    transition: 0.4s ease-in;
+}
+
+.request:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 35px;
+    color: yellow;
+    background-color: black;
+}
+
+.sideright{
+    background-color: green;
+}
