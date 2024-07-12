@@ -917,12 +917,14 @@ input{
 }
 
 .sideleft{
-    background-color: #0009; 
-    height: 100%;
+    box-shadow: 0 0 25px;
+    margin: 15px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 .orientation{
@@ -958,5 +960,34 @@ input{
 }
 
 .sideright{
-    background-color: green;
+    background-image: url(Imgs/Slider/02.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 25px;
+    margin: 15px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.xhr{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1;
+}
+
+.Xhr-username{
+    border: 1px solid white;
+    background-color: #0007;
+    backdrop-filter: blur(0.4rem);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }

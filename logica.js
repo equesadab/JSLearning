@@ -448,6 +448,51 @@ function RandomMovie () {
 };
 
 
+/* -----------------------   Section #8   ------------------------------------------------- */
+
+let $Request= document.querySelector('.request');
+    $Request.addEventListener("click", ()=>{
+        let Xhr = new XMLHttpRequest();
+        let $Xhr= document.getElementById("xhr");
+        let $Fragment = document.createDocumentFragment();
+
+        Xhr.addEventListener("readystatechange", ()=>{
+            if(Xhr.readyState!==4) return;
+
+            if(Xhr.status >= 200 && Xhr.status <= 300){
+                console.log("La peticion fue un exito");
+                let Response = JSON.parse(Xhr.responseText);
+                
+                Response.forEach(el =>{
+                    let $Div = document.createElement("div");
+                        $Div.classList.add("Xhr-username")
+                        $Div.innerHTML = `${el.username}`;
+                        $Fragment.appendChild($Div);
+                })
+
+                $Xhr.appendChild($Fragment);
+            } else {
+                let message = Xhr.statusText || "Ha Habido un error";
+                let $Div = document.createElement("div");
+                    $Div.classList.add("Xhr-username")
+                    $Div.innerHTML = message;
+                    $Xhr.appendChild($Div);
+                console.log("Ha ocurrido un error");
+            }
+        });
+
+        Xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+        Xhr.send();
+    });
+
+/*El metodo Http Request de AJAX necesita de 4 etapas:
+1 - Instanciar el elemento HTTP Request colocandolo dentro de una variable.
+2 - Agregarle un evento para dentro del mismo ejectutar la funcion con la programacion dentro.
+3 - Usar el metodo OPEN que lleva dos variables dentro, primero el metodo por el cual se ejecuta el AJAX y segundo la URL a llamar
+4 - Emplear el metodo SEND para en HTTP Request
+*/
+
 
 
 /* Funcion para invertir una cadena de texto
